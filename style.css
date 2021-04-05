@@ -4,11 +4,7 @@ body::before, body::after {
 }
 
 body {
-  background: linear-gradient(rgb(238, 8, 104), rgb(2, 80, 6));
-}
-
-button {
-  font-size: 19px;
+  background-color: rgb(129, 202, 245);
 }
 
 #main-content {
@@ -17,21 +13,40 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(245, 9, 9, 0.3);
-  color:thistle;
+  border-color: cornsilk;
+  border-style: solid;
+  border-width: 15px 15px 15px 15px;
+  /* border: 1px solid #333; */
+  background: salmon;
+  color: cornsilk;
   padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  /* border-radius: 5px; */
+  /* box-shadow: 2px 5px 5px #333; */
   min-height: 600px;
+}
+
+#new-task-description {
+  border-width: 0;
+  
+}
+
+#submit {
+  background-color: rgb(43, 97, 128);
+  color: cornsilk;
+  border-width: 0;
 }
 
 #list {
   margin: 10px;
-  border: 1px solid #333;
-  background: rgba(156, 10, 10, 0.616);
+  /* border: 1px solid #333; */
+  background: rgba(252, 99, 88, 0.966);
   padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  /* border-radius: 5px; */
+  /* box-shadow: 2px 5px 5px #333; */
   color: cornsilk;
+}
+
+a {
+  color: cornsilk;
+  text-decoration: none;
 }
