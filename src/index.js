@@ -14,7 +14,7 @@ const createNewTask = event => {
 
   const priorityValues = document.getElementById('priority-values');
   if(priorityValues.value === 'red') {        
-    newTask.style = 'background-color: #f90909';        
+    newTask.style.backgroundColor = "pink";        
     newTask.innerText = newTaskDescription.value;
   } 
   else if(priorityValues.value === 'yellow') {
@@ -28,13 +28,15 @@ const createNewTask = event => {
 
   appendNewTask(newTask);
   event.target.reset();
-
+  
+  const removeSpan = document.createElement('span');
   const removeTask = document.createElement('input');
-  removeTask.value = "x";
+  removeTask.value = "\u00D7";
   removeTask.type = "button";
   removeTask.id = "remove-button";
   removeTask.addEventListener("click", event => newTask.parentNode.removeChild(newTask), false);
-  newTask.appendChild(removeTask);
+  newTask.appendChild(removeSpan);
+  removeSpan.appendChild(removeTask);
 };
 
 const appendNewTask = task => {
