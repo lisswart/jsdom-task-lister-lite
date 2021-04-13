@@ -4,7 +4,7 @@ body::before, body::after {
 }
 
 body {
-  background-color: rgb(129, 202, 245);
+  background-color: rgb(250, 79, 49);
 }
 
 #main-content {
@@ -17,7 +17,7 @@ body {
   border-style: solid;
   border-width: 15px 15px 15px 15px;
   /* border: 1px solid #333; */
-  background: salmon;
+  background: rgb(39, 17, 3);
   color: cornsilk;
   padding: 15px 20px 18px 18px;
   /* border-radius: 5px; */
@@ -39,14 +39,21 @@ body {
 #list {
   margin: 10px;
   /* border: 1px solid #333; */
-  background: rgba(49, 47, 47, 0.966);
+  background: #b0e0fcf6;
   padding: 15px 20px 18px 18px;
   /* border-radius: 5px; */
   /* box-shadow: 2px 5px 5px #333; */
-  color: cornsilk;
+  color: rgb(14, 13, 13);
+  display: flex;
 }
 
 a {
-  color: cornsilk;
+  color: #f7c709;
   text-decoration: none;
+}
+
+#remove-button {
+  background-color: thistle;
+  margin-left: 10px;
+  justify-content: flex-end;
 }
