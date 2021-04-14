@@ -14,11 +14,11 @@ const createNewTask = event => {
 
   const priorityValues = document.getElementById('priority-values');
   if(priorityValues.value === 'red') {        
-    newTask.style.backgroundColor = "pink";        
+    newTask.style.backgroundColor = "#FF69B4";        
     newTask.innerText = newTaskDescription.value;
   } 
   else if(priorityValues.value === 'yellow') {
-    newTask.style = 'background-color: #f7c709';
+    newTask.style = 'background-color: #fde405';
     newTask.innerText = newTaskDescription.value;
   }
   else if(priorityValues.value === 'green') {

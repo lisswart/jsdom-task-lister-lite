@@ -20,14 +20,13 @@ body {
   background: rgb(39, 17, 3);
   color: cornsilk;
   padding: 15px 20px 18px 18px;
-  /* border-radius: 5px; */
+  /* border-radius5: 5px; */
   /* box-shadow: 2px 5px 5px #333; */
   min-height: 600px;
 }
 
 #new-task-description {
-  border-width: 0;
-  
+  border-width: 0;  
 }
 
 #submit {
@@ -59,4 +58,11 @@ li {
   margin-left: 10px;
   justify-content: flex-end;
   border: none;
+  position: absolute;
+  color: rgb(250, 79, 49);
+}
+
+#remove-button:hover {
+  background-color: seashell;
+  color:rgb(14, 13, 13);
 }
